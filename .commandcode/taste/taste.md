@@ -13,10 +13,10 @@ See [taste-—-qa-/-test-documentation-workflow/taste.md](taste-—-qa-/-test-do
 
 # Taste — Communication & Workflow
 
-- Communicates in short, terse instructions (e.g., "filled manually credential in .env file now continue"; "analyse these Test CAses is there any other testcases which has been added in this then add those also") and expects the agent to proceed autonomously without re-confirming or asking questions. Confidence: 0.7
+- Communicates in short, terse instructions (e.g., "filled manually credential in .env file now continue"; "analyse these Test CAses is there any other testcases which has been added in this then add those also"; "use only template of .env file"; "skip all .env file content keep template") and expects the agent to proceed autonomously without re-confirming or asking questions; if the agent drifts from the instruction, the user restates the same directive tersely rather than elaborating. Confidence: 0.8
 - Provides highly structured task briefs for documentation work using labeled sections (Role, Instructions, Context, Example, Parameters, Output, Tone) that must be followed exactly. Confidence: 0.7
 - Expects the agent to create/update README.md files for every folder in the repository (not just the root) as part of repo maintenance. Confidence: 0.8
-- Expects the agent to commit and push completed work to the user's GitHub repository autonomously (per user-provided repo URL) as the final step of a task. Confidence: 0.75
+- Expects the agent to commit and push completed work to the user's GitHub repository autonomously (per user-provided repo URL) as the final step of a task. Confidence: 0.9
 
 # Taste — QA / Test Automation Framework
 See [qa-test-automation/taste.md](qa-test-automation/taste.md)
