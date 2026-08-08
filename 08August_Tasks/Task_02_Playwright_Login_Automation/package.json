@@ -1,0 +1,25 @@
+{
+  "name": "wingify-login-playwright",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright TypeScript framework for Wingify login page automation",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:valid": "playwright test tests/login-valid.spec.ts",
+    "test:invalid": "playwright test tests/login-invalid.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "allure:clear": "rimraf allure-results allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure-playwright": "^3.10.2",
+    "dotenv": "^17.4.2"
+  }
+}

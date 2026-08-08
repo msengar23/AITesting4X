@@ -1,7 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Shell(git:*)"
+      "Shell(git:*)",
+      "Shell(git commit -F - <<'EOF' Add README.md and command reference documentation Co-authored-by: CommandCodeBot <noreply@commandcode.ai> EOF)",
+      "Shell(agent-browser:*)",
+      "Shell(npm:*)",
+      "Shell(npm ls --depth=0 2>&1; if (Test-Path node_modules) { echo \"node_modules exists\" } else { echo \"no node_modules\" })",
+      "Shell(if:*)",
+      "Shell(Test-Path:*)",
+      "Shell({:*)",
+      "Shell(Select-Object:*)",
+      "Shell(dir:*)",
+      "Shell(node --version)",
+      "powershell",
+      "Shell(node probe-login.mjs > probe-output.txt 2>&1; echo EXIT:%errorlevel%)",
+      "Shell(npx tsc --noEmit -p tsconfig.json 2 >& 1)",
+      "Shell(findstr:*)",
+      "Shell(del stage_preview.txt 2>nul & git add -A 2>&1 & echo === & git status --short 2>&1 | find /c \"\" & echo files-staged)"
     ],
     "deny": [],
     "defaultMode": "default"

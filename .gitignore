@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Test artifacts
+playwright-report/
+test-results/
+blob-report/
+allure-report/
+allure-results/
+
+# Environment files - NEVER commit real credentials
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
