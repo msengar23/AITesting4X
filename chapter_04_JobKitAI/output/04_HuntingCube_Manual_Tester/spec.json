@@ -1,0 +1,122 @@
+{
+  "output": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/output/04_HuntingCube_Manual_Tester/Mamta_Singh_Sengar_HuntingCube_Manual_Tester.docx",
+  "docTitle": "Mamta Singh Sengar — HuntingCube Manual Tester",
+  "name": "MAMTA SINGH SENGAR",
+  "title": "==MANUAL TESTER==  ·  FUNCTIONAL & REGRESSION TESTING",
+  "contact": [
+    [
+      "Noida, India",
+      "mamtasingh2326@gmail.com|mailto:mamtasingh2326@gmail.com",
+      "+91 95199 60636"
+    ],
+    [
+      "==Immediate availability==",
+      "linkedin.com/in/mamta-sengar|https://www.linkedin.com/in/mamta-sengar"
+    ]
+  ],
+  "photo": {
+    "path": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/resume-helper/resume-tailor/references/Mamtanew1_Photo.jpg",
+    "width": 100,
+    "height": 132
+  },
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "Manual testing professional with **4.8 years of experience** conducting functional and regression testing of applications. Executed test cases, documented defects, and collaborated with developers across payment, gaming, retail, and education domains. Strong QA fundamentals and proven ability to work independently and in teams."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        [
+          "Manual Testing",
+          "Functional · Regression · Sanity · Smoke · Integration · UAT"
+        ],
+        [
+          "Defect Management",
+          "Jira · Bug reporting · Defect lifecycle"
+        ],
+        [
+          "Test Mgmt",
+          "Jira · Local Test Case Generator (Jira workflow)"
+        ],
+        [
+          "API & DB",
+          "Postman · SQL validation"
+        ],
+        [
+          "Automation",
+          "Playwright · Selenium (Java) · Cucumber BDD"
+        ],
+        [
+          "Methodologies",
+          "Agile / Scrum"
+        ]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Software Test Engineer / Senior QA",
+          "org": "Chetu India Pvt. Ltd.",
+          "meta": "Jun 2021 – Oct 2023",
+          "bullets": [
+            "==Executed functional and regression test cases== for web/mobile modules; authored 500+ test cases.",
+            "==Documented defects== in Jira with clear reproduction steps; increased early defect detection by 25%.",
+            "==Collaborated with developers== on defect triage and resolution; mentored junior testers (onboarded 4)."
+          ]
+        },
+        {
+          "title": "Testing Engineer",
+          "org": "Coracle Infotech India Pvt. Ltd.",
+          "meta": "Feb 2019 – Jun 2021",
+          "bullets": [
+            "==Executed functional and regression test cases== for payment, gaming, and retail applications.",
+            "==Documented defects== and tracked them in Jira; improved defect resolution SLA from 72 hrs → 48 hrs.",
+            "Analysed product requirements to prepare test cases; validated payment transactions and MPOS flows."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAREER BREAK & UPSKILLING",
+      "roles": [
+        {
+          "title": "Career Break & Upskilling",
+          "meta": "Oct 2023 – Present",
+          "bullets": [
+            "Playwright: built automated web test suites; converted 100 manual scenarios to automated checks.",
+            "CI/CD: integrated test execution into Jenkins and GitHub Actions for PR gating and nightly regression.",
+            "Local Test Case Generator (Jira): designed a workflow to auto-generate structured test cases from Jira tickets, reducing test design time by 50%.",
+            "AI Prompting for QA: created prompts/workflows to generate test ideas and edge cases, accelerating test design by 40%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "PROJECTS & DOMAIN HIGHLIGHTS",
+      "bullets": [
+        "Payment & Gaming: end-to-end testing across POS, Management, Player, and Game portals.",
+        "Education ERP: full lifecycle testing for student, faculty, and staff modules.",
+        "MS Dynamics 365 FO: tested Retail & Commerce payment connector and MPOS integrations."
+      ]
+    },
+    {
+      "heading": "EDUCATION & CERTIFICATIONS",
+      "rows": [
+        [
+          "M.Tech",
+          "GGSIPU — 2012"
+        ],
+        [
+          "B.Tech",
+          "UPTU — 2009"
+        ],
+        [
+          "Claude 101 Certified",
+          "AI-assisted QA workflows"
+        ]
+      ]
+    }
+  ]
+}

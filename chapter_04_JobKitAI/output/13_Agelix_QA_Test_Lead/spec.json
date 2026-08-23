@@ -1,0 +1,128 @@
+{
+  "output": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/output/13_Agelix_QA_Test_Lead/Mamta_Singh_Sengar_Agelix_QA_Test_Lead.docx",
+  "docTitle": "Mamta Singh Sengar — Agelix QA Test Lead",
+  "name": "MAMTA SINGH SENGAR",
+  "title": "==QA TEST LEAD==  ·  TEST PLANNING & TEAM EXECUTION",
+  "contact": [
+    [
+      "Noida, India",
+      "mamtasingh2326@gmail.com|mailto:mamtasingh2326@gmail.com",
+      "+91 95199 60636"
+    ],
+    [
+      "==Immediate availability==",
+      "linkedin.com/in/mamta-sengar|https://www.linkedin.com/in/mamta-sengar"
+    ]
+  ],
+  "photo": {
+    "path": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/resume-helper/resume-tailor/references/Mamtanew1_Photo.jpg",
+    "width": 100,
+    "height": 132
+  },
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "QA professional with **4.8 years of experience**, including **leading QA teams and managing test planning** as Senior QA at Chetu. Led test planning and execution for web/mobile modules, coordinated scrum ceremonies, and **mentored junior testers (onboarded 4)**. Oversaw test case design, regression execution, and defect management end-to-end."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        [
+          "==Test Leadership==",
+          "==Test planning== · ==Team coordination== · ==Mentoring (4 testers onboarded)== · ==Test execution oversight=="
+        ],
+        [
+          "Manual Testing",
+          "Functional · Regression · Sanity · Smoke · Integration · UAT"
+        ],
+        [
+          "Automation",
+          "Playwright · Selenium (Java) · Cucumber BDD"
+        ],
+        [
+          "API & DB",
+          "Rest Assured · Postman · SQL validation"
+        ],
+        [
+          "Test Mgmt",
+          "Jira · Local Test Case Generator (Jira workflow)"
+        ],
+        [
+          "CI/CD & DevOps",
+          "Jenkins · GitHub Actions · Docker · Git"
+        ],
+        [
+          "Methodologies",
+          "Agile / Scrum"
+        ]
+      ],
+      "note": "LEADERSHIP GAP — your title is Senior QA, not QA Test Lead. This role expects formal team leadership; your mentoring (4 testers) and scrum coordination are the evidence. Be ready to describe how you assigned work, tracked team progress, and reviewed others' test cases. If a past manager can verify, add a reference line."
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Software Test Engineer / Senior QA",
+          "org": "Chetu India Pvt. Ltd.",
+          "meta": "Jun 2021 – Oct 2023",
+          "bullets": [
+            "==Led QA teams== — coordinated scrum ceremonies, conducted demo calls, and mentored junior testers (onboarded 4).",
+            "==Managed test planning== and oversaw execution of test cases for web/mobile modules; authored 500+ test cases.",
+            "==Led test strategy== — implemented UI automation and CI/CD integration, cutting release verification time from 3 days → 1 day.",
+            "Conducted demo calls to stakeholders; increased early defect detection by 25%."
+          ]
+        },
+        {
+          "title": "Testing Engineer",
+          "org": "Coracle Infotech India Pvt. Ltd.",
+          "meta": "Feb 2019 – Jun 2021",
+          "bullets": [
+            "Executed functional, integration, system, regression, and UAT cycles for payment, gaming, and retail domains.",
+            "Tracked defects in Jira and improved defect resolution SLA from 72 hrs → 48 hrs.",
+            "Validated payment transactions and MPOS flows; analysed middleware logs to reduce payment failures by 20%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAREER BREAK & UPSKILLING",
+      "roles": [
+        {
+          "title": "Career Break & Upskilling",
+          "meta": "Oct 2023 – Present",
+          "bullets": [
+            "Playwright: built automated web test suites; converted 100 manual scenarios to automated checks.",
+            "CI/CD: integrated test execution into Jenkins and GitHub Actions for PR gating and nightly regression.",
+            "Local Test Case Generator (Jira): designed a workflow to auto-generate structured test cases from Jira tickets, reducing test design time by 50%.",
+            "AI Prompting for QA: created prompts/workflows to generate test ideas and edge cases, accelerating test design by 40%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "PROJECTS & DOMAIN HIGHLIGHTS",
+      "bullets": [
+        "Local Test Case Generator (Jira-based): designed and delivered an auto-generation workflow for structured test cases.",
+        "Payment & Gaming: end-to-end testing across POS, Management, Player, and Game portals.",
+        "Education ERP: full lifecycle testing for student, faculty, and staff modules."
+      ]
+    },
+    {
+      "heading": "EDUCATION & CERTIFICATIONS",
+      "rows": [
+        [
+          "M.Tech",
+          "GGSIPU — 2012"
+        ],
+        [
+          "B.Tech",
+          "UPTU — 2009"
+        ],
+        [
+          "Claude 101 Certified",
+          "AI-assisted QA workflows"
+        ]
+      ]
+    }
+  ]
+}

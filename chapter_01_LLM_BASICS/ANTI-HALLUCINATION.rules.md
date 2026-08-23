@@ -33,3 +33,8 @@ Generated Output:
 Self-Validation Check:
 If you cannot complete a step, stop and report why. 
 >> Instructions 
+
+
+ROLE - You are a Senior QA Engineer.
+
+TASK - Generate [NUMBER] test cases for [FEATURE].

@@ -1,0 +1,126 @@
+{
+  "output": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/output/09_WobotAI_Testing_Engineer/Mamta_Singh_Sengar_WobotAI_Testing_Engineer.docx",
+  "docTitle": "Mamta Singh Sengar — WobotAI Testing Engineer",
+  "name": "MAMTA SINGH SENGAR",
+  "title": "==TESTING ENGINEER==  ·  MANUAL & AUTOMATION · AI-DRIVEN APPLICATIONS",
+  "contact": [
+    [
+      "Noida, India",
+      "mamtasingh2326@gmail.com|mailto:mamtasingh2326@gmail.com",
+      "+91 95199 60636"
+    ],
+    [
+      "==Immediate availability==",
+      "linkedin.com/in/mamta-sengar|https://www.linkedin.com/in/mamta-sengar"
+    ]
+  ],
+  "photo": {
+    "path": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/resume-helper/resume-tailor/references/Mamtanew1_Photo.jpg",
+    "width": 100,
+    "height": 132
+  },
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "Testing engineer with **4.8 years of experience** in manual and automation testing, with a genuine **interest in AI testing**. Designed and executed test cases, reported bugs, and built automated suites with Playwright and Selenium BDD. Actively applied **AI prompting for QA** — creating workflows that generate test ideas and edge cases — and designed an AI-assisted test case generator on Jira."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        [
+          "==AI Testing==",
+          "==AI prompting for QA · AI-assisted test design · Edge-case generation=="
+        ],
+        [
+          "Manual Testing",
+          "Functional · Regression · Sanity · Smoke · Integration · UAT"
+        ],
+        [
+          "Automation",
+          "Playwright · Selenium (Java) · Cucumber BDD"
+        ],
+        [
+          "API & DB",
+          "Rest Assured · Postman · SQL validation"
+        ],
+        [
+          "CI/CD & DevOps",
+          "Jenkins · GitHub Actions · Docker · Git"
+        ],
+        [
+          "Test Mgmt",
+          "Jira · Local Test Case Generator (Jira workflow)"
+        ],
+        [
+          "Methodologies",
+          "Agile / Scrum"
+        ]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Software Test Engineer / Senior QA",
+          "org": "Chetu India Pvt. Ltd.",
+          "meta": "Jun 2021 – Oct 2023",
+          "bullets": [
+            "==Designed and executed test cases== for web/mobile modules; authored 500+ test cases.",
+            "==Performed manual and automation testing== — automated 200 test cases with Selenium BDD and Playwright, reducing manual regression effort by 30%.",
+            "==Reported bugs== and tracked them in Jira; increased early defect detection by 25%."
+          ]
+        },
+        {
+          "title": "Testing Engineer",
+          "org": "Coracle Infotech India Pvt. Ltd.",
+          "meta": "Feb 2019 – Jun 2021",
+          "bullets": [
+            "==Designed and executed test cases== across payment, gaming, and retail applications.",
+            "==Reported bugs== and tracked defects in Jira; improved defect resolution SLA from 72 hrs → 48 hrs.",
+            "Executed functional, integration, system, regression, and UAT cycles."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAREER BREAK & UPSKILLING",
+      "roles": [
+        {
+          "title": "Career Break & Upskilling",
+          "meta": "Oct 2023 – Present",
+          "bullets": [
+            "Playwright: built automated web test suites; converted 100 manual scenarios to automated checks.",
+            "CI/CD: integrated test execution into Jenkins and GitHub Actions for PR gating and nightly regression.",
+            "Local Test Case Generator (Jira): designed a workflow to auto-generate structured test cases from Jira tickets, reducing test design time by 50%.",
+            "AI Prompting for QA: created prompts/workflows to generate test ideas and edge cases, accelerating test design by 40%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "PROJECTS & DOMAIN HIGHLIGHTS",
+      "bullets": [
+        "==Local Test Case Generator (Jira-based): auto-generated structured test cases from Jira descriptions using AI prompting; reduced manual test design time by 50%.==",
+        "Payment & Gaming: end-to-end testing across POS, Management, Player, and Game portals.",
+        "Education ERP: full lifecycle testing for student, faculty, and staff modules."
+      ]
+    },
+    {
+      "heading": "EDUCATION & CERTIFICATIONS",
+      "rows": [
+        [
+          "M.Tech",
+          "GGSIPU — 2012"
+        ],
+        [
+          "B.Tech",
+          "UPTU — 2009"
+        ],
+        [
+          "Claude 101 Certified",
+          "AI-assisted QA workflows"
+        ]
+      ]
+    }
+  ]
+}

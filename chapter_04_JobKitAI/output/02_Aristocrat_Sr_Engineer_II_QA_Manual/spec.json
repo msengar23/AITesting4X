@@ -1,0 +1,128 @@
+{
+  "output": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/output/02_Aristocrat_Sr_Engineer_II_QA_Manual/Mamta_Singh_Sengar_Aristocrat_Sr_Engineer_II_QA_Manual.docx",
+  "docTitle": "Mamta Singh Sengar — Aristocrat Sr Engineer II QA Manual",
+  "name": "MAMTA SINGH SENGAR",
+  "title": "==SR ENGINEER II — QA MANUAL==  ·  GAMING APPLICATIONS",
+  "contact": [
+    [
+      "Noida, India",
+      "mamtasingh2326@gmail.com|mailto:mamtasingh2326@gmail.com",
+      "+91 95199 60636"
+    ],
+    [
+      "==Immediate availability==",
+      "linkedin.com/in/mamta-sengar|https://www.linkedin.com/in/mamta-sengar"
+    ]
+  ],
+  "photo": {
+    "path": "C:/Users/mamta/AITESTER4XBATCH/chapter_04_JobKitAI/resume-helper/resume-tailor/references/Mamtanew1_Photo.jpg",
+    "width": 100,
+    "height": 132
+  },
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "QA professional with **4.8 years of manual QA experience**, including **gaming applications** for online and mobile platforms. Built and executed test cases, analysed product requirements, and reported defects across payment, gaming, and retail domains. Strong analytical skills and a record of collaborating with cross-functional teams to improve testing processes."
+    },
+    {
+      "heading": "CORE SKILLS",
+      "rows": [
+        [
+          "Manual Testing",
+          "Functional · Regression · Sanity · Smoke · Integration · UAT"
+        ],
+        [
+          "==Gaming Applications==",
+          "==Online and mobile platforms · game portals · payout logic=="
+        ],
+        [
+          "Test Mgmt",
+          "Jira · Local Test Case Generator (Jira workflow)"
+        ],
+        [
+          "API & DB",
+          "Rest Assured · Postman · SQL validation"
+        ],
+        [
+          "CI/CD & DevOps",
+          "Jenkins · GitHub Actions · Docker · Git"
+        ],
+        [
+          "Automation",
+          "Playwright · Selenium (Java) · Cucumber BDD"
+        ],
+        [
+          "Methodologies",
+          "Agile / Scrum"
+        ]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "Software Test Engineer / Senior QA",
+          "org": "Chetu India Pvt. Ltd.",
+          "meta": "Jun 2021 – Oct 2023",
+          "bullets": [
+            "==Built and executed 500+ test cases== for web/mobile modules; analysed product requirements to design coverage.",
+            "==Reported defects== and collaborated with developers and QA leads; increased early defect detection by 25%.",
+            "==Collaborated with cross-functional teams== to improve testing processes — coordinated scrum ceremonies, conducted demo calls, and mentored junior testers (onboarded 4).",
+            "Maintained regression packs and executed functional, regression, sanity, smoke, and integration cycles."
+          ]
+        },
+        {
+          "title": "Testing Engineer",
+          "org": "Coracle Infotech India Pvt. Ltd.",
+          "meta": "Feb 2019 – Jun 2021",
+          "bullets": [
+            "==Performed manual QA testing for gaming applications== — functional, integration, system, regression, and UAT cycles across POS, Management, **Player**, and **Game** portals.",
+            "==Analysed product requirements== and prepared/executed test cases; tracked defects in Jira and improved defect resolution SLA from 72 hrs → 48 hrs.",
+            "Validated payment transactions (Credit Card, PayPal, external gift cards) and MPOS flows; analysed middleware logs to reduce payment failures by 20%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CAREER BREAK & UPSKILLING",
+      "roles": [
+        {
+          "title": "Career Break & Upskilling",
+          "meta": "Oct 2023 – Present",
+          "bullets": [
+            "Playwright: built automated web test suites; converted 100 manual scenarios to automated checks.",
+            "CI/CD: integrated test execution into Jenkins and GitHub Actions for PR gating and nightly regression.",
+            "Local Test Case Generator (Jira): designed a workflow to auto-generate structured test cases from Jira tickets, reducing test design time by 50%.",
+            "AI Prompting for QA: created prompts/workflows to generate test ideas and edge cases, accelerating test design by 40%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "PROJECTS & DOMAIN HIGHLIGHTS",
+      "bullets": [
+        "==Payment & Gaming: end-to-end testing across POS, Management, Player, and Game portals; validated transaction flows and game payout logic.==",
+        "Local Test Case Generator (Jira-based): auto-generated structured test cases from Jira descriptions; reduced manual test design time by 50%.",
+        "MS Dynamics 365 FO: tested Retail & Commerce payment connector and MPOS integrations.",
+        "Education ERP: full lifecycle testing for student, faculty, and staff modules."
+      ]
+    },
+    {
+      "heading": "EDUCATION & CERTIFICATIONS",
+      "rows": [
+        [
+          "M.Tech",
+          "GGSIPU — 2012"
+        ],
+        [
+          "B.Tech",
+          "UPTU — 2009"
+        ],
+        [
+          "Claude 101 Certified",
+          "AI-assisted QA workflows"
+        ]
+      ]
+    }
+  ]
+}
