@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://test-plan-agent.local/schemas/test_plan.schema.json",
+  "title": "Test Plan",
+  "description": "Strict contract the LLM must satisfy for a generated test plan. Mirrors LLM.md section 1.3. Validation beyond this schema (ID sequencing, coverage ratio) is applied by tools/validate_plan.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "objective",
+    "preconditions",
+    "test_data",
+    "test_cases",
+    "risks",
+    "out_of_scope"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Test plan title, normally 'Test Plan - <KEY>: <summary>'."
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One paragraph stating what the plan verifies."
+    },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Environment, access, or data state required before testing."
+    },
+    "test_data": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Concrete input values or data sets required."
+    },
+    "test_cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/test_case" }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Areas of uncertainty or risk, including reduced grounding."
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Explicitly excluded behaviour."
+    }
+  },
+  "$defs": {
+    "test_case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "priority",
+        "type",
+        "test_design_technique",
+        "traceability",
+        "steps",
+        "expected_result"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Test case identifier. Renumbered to TC-001, TC-002, ... by code; the model's value is not trusted."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["High", "Medium", "Low"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["Positive", "Negative", "Edge", "Boundary", "Regression", "Integration"]
+        },
+        "test_design_technique": {
+          "type": "string",
+          "enum": [
+            "Boundary Value Analysis",
+            "Equivalence Partitioning",
+            "Decision Table",
+            "State Transition",
+            "Error Guessing",
+            "None"
+          ]
+        },
+        "traceability": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The acceptance criterion or requirement fragment this case derives from."
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "expected_result": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

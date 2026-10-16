@@ -1,0 +1,116 @@
+name: Test Plan Agent (scheduled)
+
+# SOP_trigger T5 — cloud recurring runs.
+#
+# Runs on a schedule and on manual dispatch. If the required repository
+# secrets are not configured, the guard below skips the run cleanly instead
+# of failing noisily.
+#
+# Required repository secrets (Settings -> Secrets and variables -> Actions):
+#   JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN, GROQ_API_KEY
+#
+# Optional repository variables:
+#   JIRA_PROJECT (default SAM1), PLAN_LIMIT (default 5)
+
+on:
+  schedule:
+    # Weekdays at 03:17 UTC (off the top of the hour to avoid CI congestion).
+    - cron: "17 3 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Jira project key"
+        required: false
+        default: "SAM1"
+      limit:
+        description: "Max issues to process"
+        required: false
+        default: "5"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-plans:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: chapter_07_AI_Agents/Test-Plan-Agent-Blast
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Guard on secrets
+        id: guard
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ -z "$JIRA_URL" ] || [ -z "$JIRA_API_TOKEN" ] || [ -z "$GROQ_API_KEY" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Skipping - repository secrets are not configured. See .github/workflows/test-plan-agent.yml for the required list."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.guard.outputs.configured == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: chapter_07_AI_Agents/Test-Plan-Agent-Blast/requirements.txt
+
+      - name: Install dependencies
+        if: steps.guard.outputs.configured == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Write .env from secrets
+        if: steps.guard.outputs.configured == 'true'
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          {
+            echo "JIRA_URL=$JIRA_URL"
+            echo "JIRA_EMAIL=$JIRA_EMAIL"
+            echo "JIRA_API_TOKEN=$JIRA_API_TOKEN"
+            echo "GROQ_API_KEY=$GROQ_API_KEY"
+            echo "GROQ_MODEL=openai/gpt-oss-120b"
+          } > .env
+
+      - name: Generate test plans
+        if: steps.guard.outputs.configured == 'true'
+        env:
+          PROJECT: ${{ github.event.inputs.project || vars.JIRA_PROJECT || 'SAM1' }}
+          LIMIT: ${{ github.event.inputs.limit || vars.PLAN_LIMIT || '5' }}
+        run: python tools/run.py --project "$PROJECT" --limit "$LIMIT"
+
+      - name: Remove .env
+        if: always() && steps.guard.outputs.configured == 'true'
+        run: rm -f .env
+
+      - name: Upload generated plans
+        if: always() && steps.guard.outputs.configured == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-plans
+          path: chapter_07_AI_Agents/Test-Plan-Agent-Blast/outputs/
+          if-no-files-found: warn
+
+      - name: Commit refreshed plans
+        if: steps.guard.outputs.configured == 'true'
+        run: |
+          if [ -z "$(git status --porcelain outputs/)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/
+          git commit -m "chore: refresh generated test plans [skip ci]"
+          git push
