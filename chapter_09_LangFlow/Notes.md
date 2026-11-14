@@ -1,7 +1,8 @@
+**Medium Way**
+
 ### Option 1: pip Install (Recommended for Learning)
 1. Install the python. 
-
-    1. https://www.python.org/downloads/
+    1. [www.python.org/downloads/](https://www.python.org/downloads/) 
 
 2. Open the Terminal 
     1. mkdir langflow-qa && cd langflow-qa
